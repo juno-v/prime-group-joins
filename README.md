@@ -19,7 +19,7 @@ We are creating a database with a multiple tables and records. Please follow the
 5. Click on the `OK` tab/button to save your database
 6. Open the SQL editor and run the following queries
 
-```
+```SQL
 CREATE TABLE customers (
     id SERIAL PRIMARY KEY,
     first_name character varying(60),
@@ -85,13 +85,13 @@ VALUES (1, '1 Main St', 'Detroit', 'MI', '31111', 'home', 1),
 (6, '934 Superstar Ave', 'Portland', 'OR', '99999', 'business', 4);
 
 INSERT INTO orders 
-VALUES (1, '2010-03-05', 88.00, 1),
-(2, '2012-02-08', 23.50, 2),
-(3, '2016-02-07', 4.09, 2),
-(4, '2011-03-04', 4.00, 3),
-(5, '2012-09-22', 12.99, 5),
-(6, '2012-09-23', 23.00, 6),
-(7, '2013-05-25', 39.12, 5);
+VALUES (1, '2010-03-05', 1),
+(2, '2012-02-08', 2),
+(3, '2016-02-07', 2),
+(4, '2011-03-04', 3),
+(5, '2012-09-22', 5),
+(6, '2012-09-23', 6),
+(7, '2013-05-25', 5);
 
 INSERT INTO products 
 VALUES (1, 'toothbrush', 3.00),
@@ -108,6 +108,19 @@ VALUES (1, 5.00, 16, 1, 1),
 (3, 4.00, 2, 2, 3),
 (4, 7.25, 3, 4, 4),
 (5, 6.00, 1, 5, 7),
+(6, 2.34, 6, 6, 5),
+(6, 2.34, 6, 6, 5),
+(6, 2.34, 6, 6, 5),
+(6, 2.34, 6, 6, 5),
+(6, 2.34, 6, 6, 5),
+(6, 2.34, 6, 6, 5),
+(6, 2.34, 6, 6, 5),
+(6, 2.34, 6, 6, 5),
+(6, 2.34, 6, 6, 5),
+(6, 2.34, 6, 6, 5),
+(6, 2.34, 6, 6, 5),
+(6, 2.34, 6, 6, 5),
+(6, 2.34, 6, 6, 5),
 (6, 2.34, 6, 6, 5),
 (7, 1.05, 9, 7, 5);
 
@@ -150,12 +163,13 @@ For each of the following questions
 * Once one person writes half of the queries, switch off.
 
 ## Example question and answer
-```
+
+```SQL
 -- 0. Get all the users
 SELECT * FROM customers;
 ```
 
-# Tasks
+## Tasks
 1. Get all customers and their addresses.
 2. Get all orders and their line items.
 3. Which warehouses have cheetos?
@@ -164,3 +178,6 @@ SELECT * FROM customers;
 6. How many customers do we have?
 7. How many products do we carry?
 8. What is the total available on-hand quantity of diet pepsi?
+9. (Stretch) How much was the total cost for each order?
+10. (Stretch) How much has each customer spent in total?
+11. (Stretch) How much has each customer spent in total? Customers who have spent $0 should still show up in the table. It should say 0, not NULL (research coalesce).
