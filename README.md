@@ -15,9 +15,8 @@ We are creating a database with a multiple tables and records. Please follow the
 1. Open Postico, if needed
 2. Connect to your server, if needed
 3. Create a `warehouse` database
-4. In the SQL query window, run the following queries.
-5. Click on the `OK` tab/button to save your database
-6. Open the SQL editor and run the queries in [data.sql](/data.sql)
+4. Click on the `OK` tab/button to save your database
+5. Open the SQL editor and run the queries in [data.sql](/data.sql)
 
 ## Entity Relationship Diagram (ERD)
 See a diagram of the available entities and their relationships. https://docs.google.com/drawings/d/1eA7JJtCVDL0K45aVzbxIUrgWXHoKY5vv1jAhssC2c1A/edit
